@@ -1,8 +1,21 @@
-# Banco de dados de Serviço de Streaming de filmes usando Spring Data JPA e Postgreessql
+# Banco de dados de Serviço de Streaming de filmes usando Spring Data JPA
+![PhantFlix](https://user-images.githubusercontent.com/121204240/224511733-18b79de7-99c9-4756-8a85-605a1f8fe3bc.png)
 
 ## Guia
 
-- O que foi utilizado
-- COnceitos por tras
-- Ideia principal
-- Referências
+## O que foi utilizado
+- Visual Studio Code
+- Java 19
+- Maven
+- Spring Web
+- Spring Data JPA
+- PostgreSQL Driver
+= Hibernate Validator
+- Lombok
+- Swagger
+
+
+## Apresentação do projeto
+- Banco de dados de clientes de um Streming de filmes, contendo as informações dos cliente em 3 tabelas diferentes, correlacionando essas informações da maneira mais adequada possivel.
+- Utilizou-se o Swagger para facilitar o uso das informações por parte do usuários
+
