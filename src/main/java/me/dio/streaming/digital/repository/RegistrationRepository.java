@@ -11,15 +11,6 @@ import java.util.List;
 @Repository
 public interface RegistrationRepository extends JpaRepository<Registration, Long> {
 
-  /**
-   *
-   * @param country bairro referência para o filtro
-   * @return lista de alunos matriculados que residem no bairro passado como
-   *         parâmetro
-   */
-  // @Query(value = "SELECT * FROM tb_matriculas m " +
-  // "INNER JOIN tb_alunos a ON m.aluno_id = a.id " +
-  // "WHERE a.country = :country", nativeQuery = true)
   @Query("FROM Registration r WHERE r.client.country = :country ")
   List<Registration> findClientRegisterCountry(String country);
 

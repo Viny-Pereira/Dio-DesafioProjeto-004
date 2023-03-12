@@ -11,12 +11,6 @@ import java.util.List;
 @Repository
 public interface ClientRepository extends JpaRepository<Client, Long> {
 
-  /**
-   *
-   * @param birthDate: data de nascimento dos alunos
-   * @return lista com todos os alunos com a data de nascimento passada como
-   *         parâmetro da função
-   */
   List<Client> findByBirthDate(LocalDate birthDate);
 
 }
